@@ -1,0 +1,13 @@
+image:
+  repository: ghcr.io/rnithinpaladin/hello-world
+  tag: latest
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+service:
+  type: LoadBalancer
+  port: 8080
+
+ingress:
+  enabled: false
